@@ -9,7 +9,11 @@ function App() {
     setCount(counter+1)
   }
   const sub = () => {
-    setCount(counter-1)
+    if(counter<1){
+      console.log("further can't go to negative");
+    }else{
+      setCount(counter-1)
+    }
   }
 
   return (
